@@ -1,7 +1,7 @@
-#make sure ur crds are for desktop applicaton
+Compile a cred.json file which contains all the user credentials
 
 
-docker run -it lol 
+docker run -it ccminiproject 
 
 
 
