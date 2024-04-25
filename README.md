@@ -6,4 +6,4 @@ docker run -it ccminiproject
 
 
 docker build -t name .
-"# CC Mini Project Team 13" 
+"# Cloud Computing Mini Project Team 13" 
