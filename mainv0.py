@@ -5,6 +5,7 @@ from googleapiclient.discovery import build
 from google_auth_oauthlib.flow import InstalledAppFlow
 from google.auth.transport.requests import Request
 import os
+
 import pickle
 
 SCOPES = ['https://www.googleapis.com/auth/drive']
@@ -58,6 +59,7 @@ def upload_folder(folder_path):
                                       media_body=media,
                                       fields='id').execute()
         print('File ID: %s' % file.get('id'))
+        
 
 
 schedule.every(1/2).minutes.do(upload_folder, "uploads")
