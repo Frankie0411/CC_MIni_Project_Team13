@@ -30,7 +30,7 @@ def upload_file():
             flow = InstalledAppFlow.from_client_secrets_file(
                 'creds2.json', SCOPES)
             creds = flow.run_console()  # Use console-based flow
-        # Save the credentials for the next run
+        # Save the credentials for the next job
         with open('token.pickle', 'wb') as token:
             pickle.dump(creds, token)
 
